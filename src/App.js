@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Timeline from 'react-calendar-timeline'
 import moment from 'moment'
 import './App.css';
+moment().format();
 
 const groups = [
     {id: 1, title: 'group 1'},
@@ -9,9 +10,9 @@ const groups = [
 ]
 
 const items = [
-    {id: 1, group: 1, title: 'item 1', start_time: moment(), end_time: moment([2017, 8, 31])},
-    {id: 2, group: 2, title: 'item 2', start_time: moment([2017, 8, 25]), end_time: moment([2017, 8, 27])},
-    {id: 3, group: 1, title: 'item 3', start_time: moment([2017, 8, 26]), end_time: moment([2017, 8, 28])}
+    {id: 1, group: 1, title: 'item 1', start_time: moment(), end_time: moment().add(1, 'hour')},
+    {id: 2, group: 2, title: 'item 2', start_time: moment().add(-0.5, 'hour'), end_time: moment().add(0.5, 'hour')},
+    {id: 3, group: 1, title: 'item 3', start_time: moment().add(2, 'hour'), end_time: moment().add(3, 'hour')}
 ]
 
 class App extends Component {
@@ -21,8 +22,8 @@ class App extends Component {
       <div className="App">
         <Timeline groups={groups}
                   items={items}
-                  defaultTimeStart={moment([2017, 7, 31])}
-                  defaultTimeEnd={moment([2017, 8, 31])}
+                  defaultTimeStart={moment().add(-12, 'hour')}
+                  defaultTimeEnd={moment().add(12, 'hour')}
                   />
       </div>
     );
