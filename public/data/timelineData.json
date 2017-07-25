@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Hel, Lesna 10",
+    "status": "in progress",
+    "dates": [
+      { "startDate": "2017, 4, 24",
+        "endDate": "2017, 4, 26"
+      },
+      { "startDate": "2017, 4, 24",
+        "endDate": "2017, 4, 26"
+      }
+    ]
+  },
+  {}
+]
