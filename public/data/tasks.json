@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "tasks": {
+      "toDo": [
+        "order a heat pump",
+        "sign an agreement with the subcontractor",
+        "prepare an invoice for partial settlement"
+      ],
+      "inProgress": [
+        {
+          "task": "order seals",
+          "person": "Michał"
+        },
+        {
+          "task": "prepare the contract",
+          "person": "Wiesław"
+        },
+        {
+          "task": "prepare the offer for photovoltaics",
+          "person": "Michał"
+        }
+      ],
+      "done": [
+        "establish the agenda",
+        "sign the contract with the client",
+        "check the offer"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "tasks": {
+      "toDo": [
+        "prepare the contract",
+        "prepare the agenda",
+        "confirm the conditions with the client"
+      ],
+      "inProgress": [
+        {
+          "task": "prepare estimation",
+          "person": "Michał"
+        },
+        {
+          "task": "organize a meeting with the client",
+          "person": "Wiesław"
+        },
+        {
+          "task": "check available resources",
+          "person": "Michał"
+        }
+      ],
+      "done": [
+        "send a rough offer",
+        "get building conditions",
+        "sell the project"
+      ]
+    }
+  }
+]

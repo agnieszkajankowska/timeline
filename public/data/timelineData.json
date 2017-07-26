@@ -1,16 +1,120 @@
 [
   {
     "id": 1,
-    "name": "Hel, Lesna 10",
+    "name": "Heat pump + gas boiler",
+    "location": {
+      "city": "Hel",
+      "street": "Leśna",
+      "details": "10"
+    },
+    "description": "Important project",
+    "projectManager": "Michał",
     "status": "in progress",
     "dates": [
-      { "startDate": "2017, 4, 24",
-        "endDate": "2017, 4, 26"
+      {
+        "startDate": "2017, 6, 24",
+        "endDate": "2017, 6, 26",
+        "noOfDays": 3
       },
-      { "startDate": "2017, 4, 24",
-        "endDate": "2017, 4, 26"
+      {
+        "startDate": "2017, 6, 29",
+        "endDate": "2017, 6, 30",
+        "noOfDays": 2
+      },
+      {
+        "startDate": "2017, 7, 1",
+        "endDate": "2017, 7, 1",
+        "noOfDays": 1
       }
-    ]
+    ],
+    "hasSubprojects": false,
+    "subprojects": [],
+    "officialEndDate": "2017, 7, 1"
   },
-  {}
+  {
+    "id": 2,
+    "name": "Sewage + water + central heating + hest pump",
+    "location": {
+      "city": "Mechelinki",
+      "street": "Arabska",
+      "details": "3A"
+    },
+    "description": "Complex project",
+    "projectManager": "Wiesław",
+    "status": "planned",
+    "dates": [
+      {
+        "startDate": "2017, 7, 10",
+        "endDate": "2017, 7, 15",
+        "noOfDays": 6
+      },
+      {
+        "startDate": "2017, 7, 16",
+        "endDate": "2017, 7, 25",
+        "noOfDays": 10
+      },
+      {
+        "startDate": "2017, 7, 27",
+        "endDate": "2017, 7, 30",
+        "noOfDays": 4
+      },
+      {
+        "startDate": "2017, 8, 1",
+        "endDate": "2017, 8, 10",
+        "noOfDays": 10
+      }
+    ],
+    "hasSubprojects": true,
+    "subprojects": [
+      {
+        "id": 1,
+        "name": "sewage system",
+        "description": "complex sewage system",
+        "dates": [
+          {
+            "startDate": "2017, 7, 10",
+            "endDate": "2017, 7, 15",
+            "noOfDays": 6
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "water system",
+        "description": "complex water system",
+        "dates": [
+          {
+            "startDate": "2017, 7, 16",
+            "endDate": "2017, 7, 25",
+            "noOfDays": 10
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "central heating system",
+        "description": "complex central heating system",
+        "dates": [
+          {
+            "startDate": "2017, 7, 27",
+            "endDate": "2017, 7, 30",
+            "noOfDays": 4
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "heat pump",
+        "description": "complex heat pump",
+        "dates": [
+          {
+            "startDate": "2017, 8, 1",
+            "endDate": "2017, 8, 10",
+            "noOfDays": 10
+          }
+        ]
+      }
+    ],
+    "officialEndDate": "2017, 8, 10"
+  }
 ]
